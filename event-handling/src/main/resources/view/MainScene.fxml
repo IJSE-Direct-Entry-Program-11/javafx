@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="372.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="26.0" prefHeight="33.0" prefWidth="560.0" style="-fx-background-color: lightblue; -fx-background-radius: 10px;" text="Event Handling" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValidate" layoutX="170.0" layoutY="139.0" mnemonicParsing="false" text="Validate" />
+      <TextField fx:id="txtNIC" layoutX="72.0" layoutY="102.0" prefHeight="24.0" prefWidth="269.0" />
+      <Label layoutX="158.0" layoutY="80.0" text="Enter your NIC" />
+      <ImageView fx:id="imvCrazy" fitHeight="150.0" fitWidth="200.0" layoutX="132.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/img/04de2e31234507.564a1d23645bf.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
