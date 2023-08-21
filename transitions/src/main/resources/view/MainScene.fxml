@@ -12,8 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="632.0" prefWidth="1003.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+<AnchorPane fx:id="root" prefHeight="632.0" prefWidth="1003.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
    <children>
       <Label alignment="CENTER" layoutX="298.0" layoutY="14.0" text="Java FX Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <font>
@@ -28,8 +27,8 @@
                      <children>
                         <HBox alignment="CENTER" layoutX="10.0" layoutY="40.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="78.0" text="Fade In" />
-                              <Button mnemonicParsing="false" text="Fade Out" />
+                              <Button fx:id="btnFadeIn" mnemonicParsing="false" onAction="#btnFadeInOnAction" prefHeight="24.0" prefWidth="78.0" text="Fade In" />
+                              <Button fx:id="btnFadeOut" mnemonicParsing="false" onAction="#btnFadeOutOnAction" text="Fade Out" />
                            </children>
                         </HBox>
                         <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Fade Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
@@ -37,7 +36,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Circle fill="DODGERBLUE" layoutX="164.0" layoutY="165.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="shpFade" fill="DODGERBLUE" layoutX="164.0" layoutY="165.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="273.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
