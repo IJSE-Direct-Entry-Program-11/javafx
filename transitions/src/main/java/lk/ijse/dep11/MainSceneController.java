@@ -2,6 +2,7 @@ package lk.ijse.dep11;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.RotateTransition;
+import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Spinner;
@@ -19,10 +20,26 @@ public class MainSceneController {
     public Spinner<Integer> txtRotate;
     public Button btnRotate;
     public Rectangle shpRotate;
+    public Spinner<Double> txtScale;
+    public Button btnScale;
+    public Circle shpScale;
+
+    public void btnScaleOnAction(ActionEvent actionEvent) {
+        ScaleTransition scale = new ScaleTransition(Duration.millis(500), shpScale);
+        scale.setFromX(0);
+        scale.setFromY(0);
+        scale.setToX(txtScale.getValue());
+        scale.setToY(txtScale.getValue());
+        scale.playFromStart();
+    }
 
     public void initialize(){
         txtRotate.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(-360, 360));
         txtRotate.getValueFactory().setValue(45);
+
+        txtScale.setValueFactory(new SpinnerValueFactory
+                                            // min,  max, initialValue,step
+                .DoubleSpinnerValueFactory(-0.5, 1.8, 1.3, 0.1));
     }
 
     public void btnRotateOnAction(ActionEvent actionEvent) {

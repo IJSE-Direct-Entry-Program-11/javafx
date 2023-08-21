@@ -64,11 +64,11 @@
                         </Label>
                         <HBox alignment="CENTER" layoutX="14.0" layoutY="50.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
                            <children>
-                              <Spinner prefHeight="24.0" prefWidth="138.0" />
-                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="64.0" text="Scale" />
+                              <Spinner fx:id="txtScale" prefHeight="24.0" prefWidth="138.0" />
+                              <Button fx:id="btnScale" mnemonicParsing="false" onAction="#btnScaleOnAction" prefHeight="24.0" prefWidth="64.0" text="Scale" />
                            </children>
                         </HBox>
-                        <Circle fill="#ff1f81" layoutX="164.0" layoutY="158.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="shpScale" fill="#ff1f81" layoutX="164.0" layoutY="158.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
                      </children>
                   </AnchorPane>
                </children>
