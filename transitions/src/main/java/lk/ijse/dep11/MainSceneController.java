@@ -3,8 +3,10 @@ package lk.ijse.dep11;
 import javafx.animation.FadeTransition;
 import javafx.animation.RotateTransition;
 import javafx.animation.ScaleTransition;
+import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.layout.AnchorPane;
@@ -17,12 +19,59 @@ public class MainSceneController {
     public Button btnFadeOut;
     public Circle shpFade;
     public AnchorPane root;
+
     public Spinner<Integer> txtRotate;
     public Button btnRotate;
     public Rectangle shpRotate;
+
     public Spinner<Double> txtScale;
     public Button btnScale;
     public Circle shpScale;
+
+    public ComboBox<String> cbTranslate;
+    public Button btnTranslate;
+    public Rectangle shpTranslate;
+
+    public void btnTranslateOnAction(ActionEvent actionEvent) {
+        TranslateTransition translate = new TranslateTransition(Duration.millis(500), shpTranslate);
+        shpTranslate.setLayoutX(111);
+        shpTranslate.setLayoutY(124);
+        switch (cbTranslate.getValue()){
+            case "SlideInLeft":
+                translate.setFromX(-250);
+                translate.setToX(0);
+                break;
+            case "SlideInRight":
+                translate.setFromX(250);
+                translate.setToX(0);
+                break;
+            case "SlideInUp":
+                translate.setFromY(-250);
+                translate.setToY(0);
+                break;
+            case "SlideInDown":
+                translate.setFromY(250);
+                translate.setToY(0);
+                break;
+            case "SlideOutLeft":
+                translate.setFromX(0);
+                translate.setToY(-250);
+                break;
+            case "SlideOutRight":
+                translate.setFromX(0);
+                translate.setToX(250);
+                break;
+            case "SlideOutUp":
+                translate.setFromY(0);
+                translate.setToY(-250);
+                break;
+            case "SlideOutDown":
+                translate.setFromY(0);
+                translate.setToY(250);
+                break;
+        }
+        translate.playFromStart();
+    }
 
     public void btnScaleOnAction(ActionEvent actionEvent) {
         ScaleTransition scale = new ScaleTransition(Duration.millis(500), shpScale);
@@ -40,6 +89,16 @@ public class MainSceneController {
         txtScale.setValueFactory(new SpinnerValueFactory
                                             // min,  max, initialValue,step
                 .DoubleSpinnerValueFactory(-0.5, 1.8, 1.3, 0.1));
+
+        cbTranslate.getItems().add("SlideInLeft");
+        cbTranslate.getItems().add("SlideInRight");
+        cbTranslate.getItems().add("SlideInUp");
+        cbTranslate.getItems().add("SlideInDown");
+        cbTranslate.getItems().add("SlideOutLeft");
+        cbTranslate.getItems().add("SlideOutRight");
+        cbTranslate.getItems().add("SlideOutUp");
+        cbTranslate.getItems().add("SlideOutDown");
+        cbTranslate.setValue(cbTranslate.getItems().get(0));
     }
 
     public void btnRotateOnAction(ActionEvent actionEvent) {

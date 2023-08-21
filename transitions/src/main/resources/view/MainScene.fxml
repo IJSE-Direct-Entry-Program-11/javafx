@@ -77,6 +77,7 @@
                <children>
                   <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
                      <children>
+                        <Rectangle fx:id="shpTranslate" arcHeight="5.0" arcWidth="5.0" fill="#ffca1f" height="105.0" layoutX="111.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
                         <Label alignment="CENTER" layoutX="59.0" layoutY="14.0" text="Translate Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <font>
                               <Font size="16.0" />
@@ -84,11 +85,10 @@
                         </Label>
                         <HBox alignment="CENTER" layoutX="14.0" layoutY="49.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
                            <children>
-                              <ComboBox prefWidth="150.0" />
-                              <Button mnemonicParsing="false" text="Translate" />
+                              <ComboBox fx:id="cbTranslate" prefWidth="150.0" />
+                              <Button fx:id="btnTranslate" mnemonicParsing="false" onAction="#btnTranslateOnAction" text="Translate" />
                            </children>
                         </HBox>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffca1f" height="105.0" layoutX="111.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
