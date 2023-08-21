@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="488.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="589.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-164.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../asset/img/Photoshop.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="209.0" text="Welcome to DEP-11" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="247.0" text="We are born to code!" textFill="WHITE" />
+   </children>
+</AnchorPane>

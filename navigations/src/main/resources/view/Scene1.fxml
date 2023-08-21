@@ -14,5 +14,7 @@
       </Label>
       <Button fx:id="btnGoToScene2" layoutX="182.0" layoutY="127.0" mnemonicParsing="false" onAction="#btnGoToScene2OnAction" text="Go to Scene 2" />
       <Button fx:id="btnGoToScene3" layoutX="300.0" layoutY="127.0" mnemonicParsing="false" onAction="#btnGoToScene3OnAction" text="Go to Scene 3" />
+      <Button layoutX="-95.0" layoutY="53.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btnOpenInNewStage" layoutX="217.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnOpenInNewStageOnAction" prefHeight="24.0" prefWidth="150.0" text="Open In New Stage" />
    </children>
 </AnchorPane>
