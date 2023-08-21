@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="632.0" prefWidth="1003.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="298.0" layoutY="14.0" text="Java FX Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="62.0" prefHeight="331.0" prefWidth="571.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox prefHeight="194.0" prefWidth="729.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="273.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="40.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="78.0" text="Fade In" />
+                              <Button mnemonicParsing="false" text="Fade Out" />
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Fade Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="DODGERBLUE" layoutX="164.0" layoutY="165.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="273.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="14.0" text="Rotate Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="49.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Spinner prefHeight="24.0" prefWidth="138.0" />
+                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="78.0" text="Rotate" />
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff35" height="105.0" layoutX="111.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="14.0" text="Scale Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="50.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <Spinner prefHeight="24.0" prefWidth="138.0" />
+                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="64.0" text="Scale" />
+                           </children>
+                        </HBox>
+                        <Circle fill="#ff1f81" layoutX="164.0" layoutY="158.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" layoutX="59.0" layoutY="14.0" text="Translate Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="49.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <ComboBox prefWidth="150.0" />
+                              <Button mnemonicParsing="false" text="Translate" />
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffca1f" height="105.0" layoutX="111.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" layoutX="56.0" layoutY="14.0" text="Fill Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="14.0" layoutY="43.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <ColorPicker />
+                                    <ColorPicker />
+                                 </children>
+                              </VBox>
+                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="64.0" text="Fill" />
+                           </children>
+                        </HBox>
+                        <Circle fill="#1fffdd" layoutX="164.0" layoutY="186.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="14.0" text="Stroke Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutX="24.0" layoutY="42.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <ColorPicker />
+                                    <ColorPicker />
+                                 </children>
+                              </VBox>
+                              <Button mnemonicParsing="false" text="Stroke" />
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6a1fff" height="105.0" layoutX="111.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
