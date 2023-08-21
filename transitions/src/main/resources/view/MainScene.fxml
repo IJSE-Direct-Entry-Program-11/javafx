@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -77,12 +78,12 @@
                <children>
                   <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
                      <children>
-                        <Rectangle fx:id="shpTranslate" arcHeight="5.0" arcWidth="5.0" fill="#ffca1f" height="105.0" layoutX="111.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
                         <Label alignment="CENTER" layoutX="59.0" layoutY="14.0" text="Translate Transitions" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
+                        <Rectangle fx:id="shpTranslate" arcHeight="5.0" arcWidth="5.0" fill="#ffca1f" height="105.0" layoutX="111.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
                         <HBox alignment="CENTER" layoutX="14.0" layoutY="49.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
                            <children>
                               <ComboBox fx:id="cbTranslate" prefWidth="150.0" />
@@ -102,14 +103,17 @@
                            <children>
                               <VBox>
                                  <children>
-                                    <ColorPicker />
-                                    <ColorPicker />
+                                    <ColorPicker fx:id="clrFrom" />
+                                    <ColorPicker fx:id="clrTo">
+                                       <value>
+                                          <Color red="0.9736841917037964" />
+                                       </value></ColorPicker>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="64.0" text="Fill" />
+                              <Button fx:id="btnFill" mnemonicParsing="false" onAction="#btnFillOnAction" prefHeight="24.0" prefWidth="64.0" text="Fill" />
                            </children>
                         </HBox>
-                        <Circle fill="#1fffdd" layoutX="164.0" layoutY="186.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="shpFill" fill="WHITE" layoutX="164.0" layoutY="186.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
                      </children>
                   </AnchorPane>
                   <AnchorPane prefHeight="299.0" prefWidth="500.0" style="-fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
@@ -123,14 +127,20 @@
                            <children>
                               <VBox>
                                  <children>
-                                    <ColorPicker />
-                                    <ColorPicker />
+                                    <ColorPicker fx:id="clrFromStroke">
+                                       <value>
+                                          <Color />
+                                       </value></ColorPicker>
+                                    <ColorPicker fx:id="clrToStroke">
+                                       <value>
+                                          <Color red="0.019999999552965164" green="0.6629299521446228" blue="1.0" />
+                                       </value></ColorPicker>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" text="Stroke" />
+                              <Button fx:id="btnStroke" mnemonicParsing="false" onAction="#btnStrokeOnAction" text="Stroke" />
                            </children>
                         </HBox>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6a1fff" height="105.0" layoutX="111.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                        <Rectangle fx:id="shpStroke" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="105.0" layoutX="111.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="106.0" />
                      </children>
                   </AnchorPane>
                </children>

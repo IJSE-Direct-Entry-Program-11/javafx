@@ -1,14 +1,8 @@
 package lk.ijse.dep11;
 
-import javafx.animation.FadeTransition;
-import javafx.animation.RotateTransition;
-import javafx.animation.ScaleTransition;
-import javafx.animation.TranslateTransition;
+import javafx.animation.*;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
@@ -31,6 +25,30 @@ public class MainSceneController {
     public ComboBox<String> cbTranslate;
     public Button btnTranslate;
     public Rectangle shpTranslate;
+
+    public ColorPicker clrFrom;
+    public ColorPicker clrTo;
+    public Button btnFill;
+    public Circle shpFill;
+
+    public Button btnStroke;
+    public Rectangle shpStroke;
+    public ColorPicker clrFromStroke;
+    public ColorPicker clrToStroke;
+
+    public void btnStrokeOnAction(ActionEvent actionEvent) {
+        StrokeTransition stroke = new StrokeTransition(Duration.millis(2500), shpStroke);
+        stroke.setFromValue(clrFromStroke.getValue());
+        stroke.setToValue(clrToStroke.getValue());
+        stroke.playFromStart();
+    }
+
+    public void btnFillOnAction(ActionEvent actionEvent) {
+        FillTransition fill = new FillTransition(Duration.millis(2500), shpFill);
+        fill.setFromValue(clrFrom.getValue());
+        fill.setToValue(clrTo.getValue());
+        fill.playFromStart();
+    }
 
     public void btnTranslateOnAction(ActionEvent actionEvent) {
         TranslateTransition translate = new TranslateTransition(Duration.millis(500), shpTranslate);
@@ -55,7 +73,7 @@ public class MainSceneController {
                 break;
             case "SlideOutLeft":
                 translate.setFromX(0);
-                translate.setToY(-250);
+                translate.setToX(-250);
                 break;
             case "SlideOutRight":
                 translate.setFromX(0);
