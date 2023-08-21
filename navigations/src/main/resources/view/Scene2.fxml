@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="154.0" prefWidth="463.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.Scene2Controller">
+   <children>
+      <Label layoutX="150.0" layoutY="20.0" text="Scene 2">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGoToScene1" layoutX="119.0" layoutY="95.0" mnemonicParsing="false" onAction="#btnGoToScene1OnAction" text="Go to Scene1" />
+      <Button fx:id="btnGoToScene3" layoutX="239.0" layoutY="95.0" mnemonicParsing="false" onAction="#btnGoToScene3OnAction" text="Go to Scene3" />
+   </children>
+</AnchorPane>
