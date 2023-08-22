@@ -5,19 +5,24 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-
-<FlowPane fx:controller="lk.ijse.dep11.FlowPaneLayoutSceneController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.FlowPaneLayoutSceneController">
    <children>
       <Label alignment="CENTER" prefHeight="71.0" prefWidth="217.0" style="-fx-background-color: lightgreen;" text="Flow Pane Layout">
          <font>
-            <Font size="22.0" />
+            <Font name="Ubuntu" size="22.0" />
          </font>
       </Label>
-      <Button mnemonicParsing="false" prefHeight="149.0" prefWidth="130.0" text="Button" />
-      <Button alignment="CENTER" layoutX="227.0" layoutY="10.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="196.0" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="149.0" prefWidth="130.0" text="Button">
+         <font>
+            <Font name="Ubuntu" size="22.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="227.0" layoutY="10.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="196.0" text="Button">
+         <font>
+            <Font name="Ubuntu" size="22.0" />
+         </font></Button>
       <Label alignment="CENTER" layoutX="10.0" layoutY="49.0" prefHeight="71.0" prefWidth="205.0" style="-fx-background-color: lightgreen;" text="Flow Pane Layout">
          <font>
-            <Font size="22.0" />
+            <Font name="Ubuntu" size="22.0" />
          </font>
       </Label>
    </children>

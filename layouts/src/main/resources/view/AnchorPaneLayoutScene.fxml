@@ -12,7 +12,10 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <Button fx:id="btnClickMe" layoutX="257.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnClickMeOnAction" prefHeight="31.0" prefWidth="103.0" text="Click Me" />
+      <Button fx:id="btnClickMe" layoutX="257.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnClickMeOnAction" prefHeight="31.0" prefWidth="103.0" text="Click Me">
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font></Button>
       <Label layoutX="140.0" layoutY="71.0" prefHeight="40.0" prefWidth="321.0" style="-fx-background-color: lightblue;" text="Anchor Pane Layout" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="139.0">
          <font>
             <Font size="32.0" />

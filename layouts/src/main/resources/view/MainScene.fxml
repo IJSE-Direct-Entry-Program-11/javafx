@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="464.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+<AnchorPane fx:id="root" prefHeight="422.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
    <children>
       <VBox layoutX="12.0" layoutY="60.0" spacing="10.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
          <children>
@@ -34,19 +34,15 @@
                <font>
                   <Font name="Ubuntu" size="15.0" />
                </font></Button>
+            <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane / Accordion Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
             <Button layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="HBox Layout">
                <font>
                   <Font name="Ubuntu" size="15.0" />
                </font></Button>
             <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="VBox Layout">
-               <font>
-                  <Font name="Ubuntu" size="15.0" />
-               </font></Button>
-            <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane Layout">
-               <font>
-                  <Font name="Ubuntu" size="15.0" />
-               </font></Button>
-            <Button layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Accordion Layout">
                <font>
                   <Font name="Ubuntu" size="15.0" />
                </font></Button>

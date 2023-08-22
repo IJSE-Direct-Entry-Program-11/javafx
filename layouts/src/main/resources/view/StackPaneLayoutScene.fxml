@@ -5,13 +5,16 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<StackPane fx:controller="lk.ijse.dep11.StackPaneLayoutSceneController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.StackPaneLayoutSceneController">
    <children>
       <Circle fx:id="shpCircle" fill="DODGERBLUE" radius="143.0" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#ff1f5b" points="-269.0, 208.0, 115.0, 130.0, -129.0, -135.0" stroke="BLACK" strokeType="INSIDE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6cf206" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Button fx:id="btnBringToFront" mnemonicParsing="false" onAction="#btnBringToFrontOnAction" prefHeight="37.0" prefWidth="108.0" text="Bring to Front" />
+      <Polygon fx:id="shpPoly" fill="#ff1f5b" points="-269.0, 208.0, 115.0, 130.0, -129.0, -135.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="shpRectangle" arcHeight="5.0" arcWidth="5.0" fill="#6cf206" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="btnBringToFront" mnemonicParsing="false" onAction="#btnBringToFrontOnAction" prefHeight="37.0" prefWidth="108.0" text="Bring to Front">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font></Button>
    </children>
 </StackPane>
