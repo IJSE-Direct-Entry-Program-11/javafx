@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.MainView"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainViewController">
+   <children>
+      <TextField fx:id="txtAudioPath" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="387.0" />
+      <Button fx:id="btnBrowseAudio" layoutX="410.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBrowseAudioOnAction" prefHeight="24.0" prefWidth="119.0" text="Browse Audio" />
+      <Button fx:id="btnPlayAudio" layoutX="180.0" layoutY="59.0" mnemonicParsing="false" onAction="#btnPlayAudioOnAction" text="Play Audio" />
+      <Button fx:id="btnStopAudio" layoutX="273.0" layoutY="59.0" mnemonicParsing="false" onAction="#btnStopAudioOnAction" text="Stop Audio" />
+      <Separator layoutX="14.0" layoutY="101.0" prefHeight="2.0" prefWidth="515.0" />
+      <TextField fx:id="txtVideoPath" editable="false" layoutX="16.0" layoutY="117.0" prefHeight="24.0" prefWidth="387.0" />
+      <Button fx:id="btnBrowseVideo" layoutX="412.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnBrowseVideoOnAction" prefHeight="24.0" prefWidth="119.0" text="Browse Video" />
+      <Button fx:id="btnPlayVideo" layoutX="182.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnPlayVideoOnAction" text="Play Video" />
+      <Button fx:id="btnStopVideo" layoutX="275.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnStopVideoOnAction" text="Stop Video" />
+      <MediaView fx:id="mvMain" fitHeight="300.0" fitWidth="510.0" layoutX="16.0" layoutY="184.0" />
+   </children>
 </AnchorPane>
