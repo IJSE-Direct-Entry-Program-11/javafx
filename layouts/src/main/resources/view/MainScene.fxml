@@ -14,11 +14,11 @@
             <Button fx:id="btnAnchorPaneLayout" mnemonicParsing="false" onAction="#btnAnchorPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Anchor Pane Layout" />
             <Button fx:id="btnBorderPaneLayout" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBorderPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Border Pane Layout" />
             <Button fx:id="btnFlowPaneLayout" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnFlowPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Flow Pane Layout" />
-            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Title Pane Layout" />
-            <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Grid Pane Layout" />
+            <Button fx:id="btnTilePaneLayout" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnTilePaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Tile Pane Layout" />
+            <Button fx:id="btnGridPaneLayout" layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnGridPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Grid Pane Layout" />
             <Button layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="HBox Layout" />
             <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="VBox Layout" />
-            <Button layoutX="10.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Stack Pane Layout" />
+            <Button fx:id="btnStackPaneLayout" layoutX="10.0" layoutY="250.0" onAction="#btnStackPaneLayoutOnAction" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Stack Pane Layout" />
             <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane Layout" />
             <Button layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Accordion Layout" />
          </children>

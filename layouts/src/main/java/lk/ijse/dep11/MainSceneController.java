@@ -4,9 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,6 +15,9 @@ public class MainSceneController {
     public Button btnAnchorPaneLayout;
     public Button btnBorderPaneLayout;
     public Button btnFlowPaneLayout;
+    public Button btnTilePaneLayout;
+    public Button btnGridPaneLayout;
+    public Button btnStackPaneLayout;
 
     public void btnAnchorPaneLayoutOnAction(ActionEvent actionEvent) throws IOException {
         AnchorPane anchorPaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/AnchorPaneLayoutScene.fxml"));
@@ -42,6 +43,33 @@ public class MainSceneController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Flow Pane Layout");
+        stage.show();
+    }
+
+    public void btnTilePaneLayoutOnAction(ActionEvent actionEvent) throws IOException {
+        TilePane tilePaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/TilePaneLayoutScene.fxml"));
+        Scene scene = new Scene(tilePaneLayoutSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Tile Pane Layout");
+        stage.show();
+    }
+
+    public void btnGridPaneLayoutOnAction(ActionEvent actionEvent) throws IOException {
+        GridPane gridPaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/GridPaneLayoutScene.fxml"));
+        Scene scene = new Scene(gridPaneLayoutSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Grid Pane Layout");
+        stage.show();
+    }
+
+    public void btnStackPaneLayoutOnAction(ActionEvent actionEvent) throws IOException {
+        StackPane stackPaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/StackPaneLayoutScene.fxml"));
+        Scene scene = new Scene(stackPaneLayoutSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Stack Pane Layout");
         stage.show();
     }
 }
