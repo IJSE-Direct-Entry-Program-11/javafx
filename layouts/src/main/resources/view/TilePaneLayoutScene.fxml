@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.TilePane?>
 
 
-<TilePane alignment="CENTER" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" vgap="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<TilePane fx:controller="lk.ijse.dep11.TilePaneLayoutSceneController" alignment="CENTER" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" vgap="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="68.0" prefWidth="62.0" text="Button" TilePane.alignment="TOP_LEFT" />
       <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="72.0" prefWidth="62.0" text="Button" TilePane.alignment="CENTER" />

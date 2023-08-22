@@ -9,8 +9,8 @@ public class AnchorPaneLayoutSceneController {
     public AnchorPane root;
 
     public void btnClickMeOnAction(ActionEvent actionEvent) {
-        double x = Math.random() * root.getWidth();
-        double y = Math.random() * root.getHeight();
+        double x = Math.random() * (root.getWidth() - btnClickMe.getWidth());
+        double y = Math.random() * (root.getHeight() - btnClickMe.getHeight());
 
         btnClickMe.setLayoutX(x);
         btnClickMe.setLayoutY(y);

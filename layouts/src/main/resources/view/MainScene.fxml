@@ -6,26 +6,55 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="root" prefHeight="464.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
    <children>
-      <VBox layoutX="12.0" layoutY="60.0" spacing="10.0">
+      <VBox layoutX="12.0" layoutY="60.0" spacing="10.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
          <children>
-            <Button fx:id="btnAnchorPaneLayout" mnemonicParsing="false" onAction="#btnAnchorPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Anchor Pane Layout" />
-            <Button fx:id="btnBorderPaneLayout" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBorderPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Border Pane Layout" />
-            <Button fx:id="btnFlowPaneLayout" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnFlowPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Flow Pane Layout" />
-            <Button fx:id="btnTilePaneLayout" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnTilePaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Tile Pane Layout" />
-            <Button fx:id="btnGridPaneLayout" layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnGridPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Grid Pane Layout" />
-            <Button layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="HBox Layout" />
-            <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="VBox Layout" />
-            <Button fx:id="btnStackPaneLayout" layoutX="10.0" layoutY="250.0" onAction="#btnStackPaneLayoutOnAction" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Stack Pane Layout" />
-            <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane Layout" />
-            <Button layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Accordion Layout" />
+            <Button fx:id="btnAnchorPaneLayout" mnemonicParsing="false" onAction="#btnAnchorPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Anchor Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnBorderPaneLayout" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBorderPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Border Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnFlowPaneLayout" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnFlowPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Flow Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnTilePaneLayout" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnTilePaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Tile Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnGridPaneLayout" layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnGridPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Grid Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnStackPaneLayout" layoutX="10.0" layoutY="250.0" mnemonicParsing="false" onAction="#btnStackPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Stack Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="HBox Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="VBox Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Accordion Layout">
+               <font>
+                  <Font name="Ubuntu" size="15.0" />
+               </font></Button>
          </children>
       </VBox>
-      <Label alignment="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="16.0" prefWidth="309.0" text="Layouts">
+      <Label alignment="CENTER" layoutX="12.0" layoutY="16.0" prefHeight="16.0" prefWidth="309.0" text="Layouts" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
          <font>
-            <Font size="22.0" />
+            <Font name="Ubuntu" size="25.0" />
          </font>
       </Label>
    </children>
