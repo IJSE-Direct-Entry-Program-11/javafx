@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="517.0" prefWidth="716.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Label layoutX="181.0" layoutY="55.0" prefHeight="30.0" prefWidth="386.0" text="Gallery App" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Ubuntu Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="64.0" prefWidth="650.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label prefHeight="22.0" prefWidth="160.0" text="Select the folder location">
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Ubuntu" size="13.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="27.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="txtFolderPath" editable="false" maxHeight="1.7976931348623157E308" promptText="Click browse to select a folder" style="-fx-background-color: white; -fx-border-color: lightgray;" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Ubuntu" size="13.0" />
+                     </font></TextField>
+                  <Button fx:id="btnBrowse" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnBrowseOnAction" style="-fx-background-color: dodgerblue;" text="Browse" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu" size="13.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="56.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../asset.img/picture%20(1).png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="pbLoader" layoutY="493.0" prefWidth="200.0" progress="0.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="24.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: lightgray;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="115.0">
+         <content>
+            <TilePane fx:id="tlpImageContainer" hgap="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" vgap="2.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lblImageCount" layoutX="9.0" layoutY="490.0" prefHeight="20.0" prefWidth="696.0" text="Total Image Count: 0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="11.0">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
