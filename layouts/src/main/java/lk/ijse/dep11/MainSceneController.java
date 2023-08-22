@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TabPane;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -18,6 +19,7 @@ public class MainSceneController {
     public Button btnTilePaneLayout;
     public Button btnGridPaneLayout;
     public Button btnStackPaneLayout;
+    public Button btnMiscLayout;
 
     public void btnAnchorPaneLayoutOnAction(ActionEvent actionEvent) throws IOException {
         AnchorPane anchorPaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/AnchorPaneLayoutScene.fxml"));
@@ -70,6 +72,15 @@ public class MainSceneController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Stack Pane Layout");
+        stage.show();
+    }
+
+    public void btnMiscLayoutOnAction(ActionEvent actionEvent) throws IOException {
+        TabPane tabAndAccordionPaneLayoutSceneRoot = FXMLLoader.load(getClass().getResource("/view/TabAndAccordionPaneLayoutScene.fxml"));
+        Scene scene = new Scene(tabAndAccordionPaneLayoutSceneRoot);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Tab / Accordion Pane Layout");
         stage.show();
     }
 }
