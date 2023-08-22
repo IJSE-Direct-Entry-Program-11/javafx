@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.AnchorPaneLayoutSceneController">
+   <children>
+      <Label layoutX="140.0" layoutY="14.0" style="-fx-background-color: green;" text="Anchor Pane Layout">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClickMe" layoutX="257.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnClickMeOnAction" prefHeight="31.0" prefWidth="103.0" text="Click Me" />
+      <Label layoutX="140.0" layoutY="71.0" prefHeight="40.0" prefWidth="321.0" style="-fx-background-color: lightblue;" text="Anchor Pane Layout" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="139.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

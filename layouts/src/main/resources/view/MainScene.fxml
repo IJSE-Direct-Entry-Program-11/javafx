@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="464.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <VBox layoutX="12.0" layoutY="60.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnAnchorPaneLayout" mnemonicParsing="false" onAction="#btnAnchorPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Anchor Pane Layout" />
+            <Button fx:id="btnBorderPaneLayout" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnBorderPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Border Pane Layout" />
+            <Button fx:id="btnFlowPaneLayout" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnFlowPaneLayoutOnAction" prefHeight="30.0" prefWidth="309.0" text="Flow Pane Layout" />
+            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Title Pane Layout" />
+            <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Grid Pane Layout" />
+            <Button layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="HBox Layout" />
+            <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="VBox Layout" />
+            <Button layoutX="10.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Stack Pane Layout" />
+            <Button layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Tab Pane Layout" />
+            <Button layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="309.0" text="Accordion Layout" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="16.0" prefWidth="309.0" text="Layouts">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
