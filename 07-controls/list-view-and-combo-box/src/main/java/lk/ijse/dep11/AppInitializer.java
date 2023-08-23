@@ -16,7 +16,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/MainScene.fxml"));
+        AnchorPane root = FXMLLoader.load(getClass().getResource("/view/ComboBoxScene.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
         primaryStage.setTitle("List View and Combo Box Demo");
