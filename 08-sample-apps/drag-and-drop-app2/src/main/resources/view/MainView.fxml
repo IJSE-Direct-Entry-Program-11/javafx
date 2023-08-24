@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="view.MainView"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="393.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainViewController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Drag and Drop Demo 2" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="43.0" text="Enter a task to add" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTask" layoutX="15.0" layoutY="68.0" onAction="#txtTaskOnAction" prefHeight="24.0" prefWidth="456.0" promptText="Eg. Complete Drag and Drop" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="lvTasks" layoutX="15.0" layoutY="100.0" onDragDetected="#lvTasksOnDragDetected" prefHeight="124.0" prefWidth="456.0" style="-fx-font-family: Ubuntu; -fx-font-size: 14px;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="234.0" text="Completed Task List" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvCompletedTasks" layoutX="15.0" layoutY="259.0" onDragDropped="#lvCompletedTasksOnDragDropped" onDragOver="#lvCompletedTasksOnDragOver" prefHeight="124.0" prefWidth="456.0" style="-fx-font-family: Ubuntu; -fx-font-size: 14px;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
 </AnchorPane>
