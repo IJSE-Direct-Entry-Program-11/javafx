@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="549.0" prefWidth="710.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+   <children>
+      <Button fx:id="btnNewStudent" layoutX="634.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnNewStudentOnAction" prefHeight="26.0" style="-fx-background-color: green; -fx-text-fill: white;" text="+ NEW STUDENT" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="Ubuntu" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="14.0" text="Table View Demo 2">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="14.0" layoutY="42.0" prefHeight="200.0" prefWidth="685.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="15.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="144.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="10.0" prefWidth="546.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Student ID : " GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Student Name : " GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Programme : " GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Contact Number : " GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" editable="false" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="332.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cbProgramme" maxWidth="1.7976931348623157E308" prefWidth="150.0" style="-fx-font-size: 14px; -fx-font-family: Ubuntu;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtContact" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="70.0" text="SAVE">
+                     <font>
+                        <Font name="Ubuntu" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: orange;" text="DELETE">
+                     <font>
+                        <Font name="Ubuntu" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <TableView fx:id="tblStudents" layoutX="14.0" layoutY="243.0" prefHeight="296.0" prefWidth="690.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="243.0">
+        <columns>
+          <TableColumn prefWidth="75.0" style="-fx-font-size: 14px; -fx-font-family: Ubuntu;" text="ID" />
+          <TableColumn prefWidth="195.0" style="-fx-font-size: 14px; -fx-font-family: Ubuntu;" text="NAME" />
+            <TableColumn prefWidth="249.0" style="-fx-font-size: 14px; -fx-font-family: Ubuntu;" text="PROGRAMME" />
+            <TableColumn prefWidth="142.0" style="-fx-font-size: 14px; -fx-font-family: Ubuntu;" text="CONTACT NUMBER" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
