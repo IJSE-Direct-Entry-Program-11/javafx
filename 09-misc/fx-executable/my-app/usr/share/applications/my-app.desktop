@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Java FX App
+Comment=This is my first Java FX Executable application
+Exec=/usr/bin/app
+Icon=/opt/my-app/icon/app-icon.png

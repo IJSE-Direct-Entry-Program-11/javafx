@@ -1,0 +1,7 @@
+Package: my-app
+Version: 1.0.0
+Section: application
+Priority: optional
+Architecture: all
+Maintainer: Direct Entry Program <dep@ijse.lk>
+Description: Java FX Executable Demo
